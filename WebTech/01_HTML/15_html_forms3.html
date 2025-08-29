@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h1>Student Registration</h1>
+<!-- FIRST NAME   -->
+
+    <div>
+        <label for="fname">First Name</label>
+        <br>
+        <input type="text" id="fname" name="firstName">
+    </div>
+
+    <div>
+        <label for="lname">Last Name</label>
+        <br>
+        <input type="text" id="lname" name="lastName">
+    </div>
+
+    <div>
+        <label for="address">Address</label>
+        <br>
+        <textarea id="address" rows="10" cols="21"></textarea>
+    </div>
+    <div>
+        <label for="program" >Program</label>
+        <br>
+        <select id="program" name="program">
+            <optgroup label="Backend Dev">
+                <option>Java</option>
+                <option>Python</option>
+                <option>C</option></optgroup>
+            <optgroup label="Frontend Dev">
+                <option>C#</option>
+                <option>C++</option>
+                <option>Angular</option>
+                <option>HTML</option>
+                <option>JS</option>
+                <option>React</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div>
+        <label>Select Payment Plan</label>
+        <br>
+        <input type="radio" id="male" name="gender"><label for="male">Full Payment</label>
+        <br>
+        <input type="radio" id="female" name="gender"><label for="female">Monthly Payment</label>
+    </div>
+
+<!--  data list  -->
+    <div>
+        <label for="course">Select Course</label>
+        <br>
+        <input type="text" list="courses" id="course">
+        <datalist id="courses">
+            <option value="Foundation in ICT and SE">
+            <option value="GDSE">
+            <option value="CMJD">
+            <option value="Bsc (Hons) in SE">
+        </datalist>
+    </div>
+
+    <br>
+    <button type="submit">Submit</button>
+    <button type="update">Update</button>
+    <button type="reset">Reset</button>
+    <button type="delete">Delete</button>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*h1 {*/
+        /*    color: red;*/
+        /*}*/
+
+        /*#heading {*/
+        /*    color: blue;*/
+        /*}*/
+
+        /*.myClass {*/
+        /*    color: yellow;*/
+        /*}*/
+
+        .myClass { /* 0,0,1,0 */
+            color: hotpink;
+        }
+
+        h1 { /* 0,0,0,1 */
+            color: skyblue;
+        }
+
+        #myHeading { /* 0,1,0,0 */
+            color: yellow;
+        }
+
+        * { /* 0,0,0,0 */
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 id="heading" class="myClass">Hello</h1>
+    <!-- 1,0,0,0 -->
+    <h1 id="myHeading" class="myClass" style="color: greenyellow;">Hello CSS!</h1>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+<!--/*Type Selector*/-->
+<!--        h1 {-->
+<!--           color: purple;-->
+<!--           background-color: yellow;-->
+<!--            }-->
+
+<!--        div {-->
+<!--            color: blue;-->
+<!--            background-color: lightblue;-->
+<!--            }-->
+<!--        #myh2 {-->
+<!--            color: orange;-->
+<!--        }-->
+
+<!--        #para {-->
+<!--            color: blue;-->
+<!--        }-->
+
+<!--        #span1 {-->
+<!--            color: green;-->
+<!--        }-->
+
+<!-- Class Selector -->
+<!--        .mystyle{-->
+<!--        color: mediumpurple;-->
+<!--        background-color: lightblue;-->
+<!--        }-->
+
+/* Universal Selector */
+     /*   * {
+            color: pink;
+        }
+        */
+
+/* Attribute Selectors */
+     /*   [href]{
+            background-color: pink;
+        }
+
+        [id]{
+            background-color: cyan;
+        }
+
+        [class]{
+            background-color: skyblue;
+        }
+        */
+        /*
+            [href="https://www.ijse.lk"]{
+            background-color: pink;
+        }
+        */
+
+        [href^="https"]  {
+            background-color: pink;
+        }
+
+           [href^="http:"]  {
+            background-color: skyblue;
+        }
+
+        [href$="g"]  {
+            background-color: gold;
+        }
+
+        [href*="code"]  {
+            background-color: gold;
+        }
+
+        [href~="code"]  {
+            background-color: green;
+        }
+
+        h3[class] {
+            background-color: yellow;
+        }
+
+        /*Pseudo selectors*/
+        ::selection {
+            color: red;
+            background-color: darkkhaki;
+        }
+
+        input ::placeholder {
+            color:turquoise;
+        }
+
+        /*applies color to both button and the file container*/
+        input[type="file"]::file-selector-button{
+            background-color: red;
+        }
+
+        /*select krgt element ekt content add krnna we use content*/
+        /*u can either use emojis*/
+        li::marker {
+            content: "$"
+        }
+
+    /*--------------Grouping Selector---------------*/
+        h2,h3, #para,.h3{
+            background-color: turquoise;
+        }
+
+    </style>
+
+</head>
+<body>
+<!--<h1>HI</h1>-->
+<!--<div>-->
+<!--    Lets do CSS!-->
+<!--</div>-->
+<h2 id="myh2">
+    Welcome
+</h2>
+<p id="para">Lorem <span id="span1">ipsum</span> dolor sit amet, consectetur adipisicing elit.
+    Aspernatur, autem deserunt eaque explicabo fugiat, fugit hic libero nesciunt
+    nulla odit quo reprehenderit? Asperiores assumenda eum,
+    explicabo fugiat molestias ratione totam!</p>
+
+<!-- Class Selector-->
+<!--<p class="mystyle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+<!--    Aspernatur, autem deserunt eaque explicabo fugiat, fugit hic libero nesciunt-->
+<!--    nulla odit quo reprehenderit? Asperiores assumenda eum,-->
+<!--    explicabo fugiat molestias ratione totam!</p>-->
+
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+<!--    Aspernatur, autem deserunt eaque explicabo fugiat, fugit hic libero nesciunt-->
+<!--    nulla odit quo reprehenderit? Asperiores assumenda eum,-->
+<!--    explicabo fugiat molestias ratione totam!</p>-->
+
+<!--<h3 class="mystyle">WELCOME</h3>-->
+
+<!--<p class="mystyle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+<!--    Aspernatur, autem deserunt eaque explicabo fugiat, fugit hic libero nesciunt-->
+<!--    nulla odit quo reprehenderit? Asperiores assumenda eum,-->
+<!--    explicabo fugiat molestias ratione totam!</p>-->
+
+<h3 class="h3">Lets dive deep into dev!</h3>
+<h3>Lets dive deep into dev!</h3>
+
+<a href="https://www.ijse.lk">IJSE LK</a> <br>
+<a href="https://www.ijse.com">IJSE COM</a> <br>
+<a href="https://www.abcd.lk">ABCD</a> <br>
+<a href="http://www.wikipidia.org">Wikipidia</a> <br>
+<a href="http ://www.rootcode.io">RootCodeIO</a> <br>
+<a href="http://www.root code.io">Root CodeIO</a> <br>
+<a href="http://www.root code .io">Root Code IO</a> <br>
+
+<input type="file">
+<ul>
+    <li>Java</li>
+    <li>JS</li>
+    <li>CSS</li>
+</ul>
+
+</body>
+</html>
