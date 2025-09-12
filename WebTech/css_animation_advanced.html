@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    div {
+      width: 300px;
+      aspect-ratio:1/1;
+      background: gold;
+      animation-name: change-color;
+      animation-duration: 5000ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @Keyframes change-color {
+        /*keyframe 1*/
+        0% {
+            background: yellow;
+        }
+        /*keyframe 2*/
+        25% {
+             background: orange;
+        }
+        /*keyframe 3*/
+        50% {
+             background: purple;
+        }
+        /*keyframe 4*/
+        75% {
+             background: blue;
+        }
+        /*keyframe 5*/
+        100% {
+             background: black;
+        }
+    }
+  </style>
+</head>
+<body>
+<div></div>
+
+</body>
+</html>

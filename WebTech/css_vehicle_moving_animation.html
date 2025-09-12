@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="lib/normalize.css" rel="stylesheet" type="text/css">
+    <style>
+        #main {
+            position: absolute;
+            width:200px;
+            height: 100px;
+            background: blue;
+            animation-name:moving-vehicle;
+            animation-duration: 5000ms;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; /*infinite*/
+
+        }
+
+        @Keyframes moving-vehicle {
+            from {
+                margin-left:0px;
+            }
+            to {
+                 margin-left:1000px;
+            }
+        }
+
+        #main > div {
+
+            width:50px;
+            height: 50px;
+            background: black;
+            border-radius: 100%
+        }
+    </style>
+</head>
+<body>
+<div id="main"></div>
+<div></div><div></div>
+
+</body>
+</html>

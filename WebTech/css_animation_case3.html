@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="lib/normalize.css" rel="stylesheet" type="text/css">
+    <style>
+        section {
+        width: 1000px;
+        height: 500px;
+        border: 5px solid black;
+        overflow: hidden;
+        }
+        section > div {
+        width: 200px;
+        height: 100px;
+        border-radius: 20px;
+        background: blue;
+        animation-name: move;
+        animation-duration: 5000ms;
+        animation-direction: alternate;/* normal, reverse, alternate-reverse*/
+        animation-timing-function: linear; /* ease-in, ease-in-out, linear*/
+        animation-iteration-count: infinite; /*infinite*/
+        }
+
+        @Keyframes move {
+            0% {
+                margin-left: 0;
+                margin-top: 0;
+                transform: rotate(0deg);
+
+            }
+            25% {
+                margin-left: calc(1000px - 200px); /*1000px-200px=800px*/
+                margin-top: 0;
+                transform: rotate(180deg);
+            }
+            50% {
+                margin-left: calc(1000px - 200px);
+                margin-top: 400px;
+                transform: rotate(360deg);
+            }
+            75% {
+                margin-left: 0;
+                margin-top: calc(500px - 100px);
+                transform: rotate(540deg);
+            }
+            100% {
+                margin-left: 0;
+                margin-top: 0;
+                transform: rotate(720deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+<div></div>
+</section>
+</body>
+</html>

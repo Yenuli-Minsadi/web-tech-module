@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="lib/normalize.css" rel="stylesheet" type="text/css">
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation-name: move;
+            animation-duration: 5000ms;
+            animation-direction: normal;/* normal, reverse, alternate-reverse*/
+            animation-timing-function: ease-in-out; /* ease-in, ease-in-out, linear*/
+            animation-iteration-count: 3; /*infinite*/
+
+<!--            animation-delay: 5000ms;-->
+
+
+        }
+
+        @Keyframes move {
+            from {
+            margin-left:0px;
+            }
+            to {
+            margin-left:500px;
+            }
+        }
+    </style>
 </head>
 <body>
-$END$
+<div>
+
+</div>
+
 </body>
 </html>
