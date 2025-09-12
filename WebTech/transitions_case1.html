@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="lib/normalize.css" rel="stylesheet" type="text/css">
+  <!-- fontawesome icon library -->
+  <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+  <style>
+      section {
+        position: absolute;
+        height: fit-content;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+      }
+
+      section > div {
+           position: relative;
+           width: 200px;
+           height: 70px;
+           color: white;
+           padding: 20px;
+           background: blue;
+           transition-duration: 3000ms;
+           
+           margin: 10px 0px;
+           border-top-right-radius:8px;
+           border-bottom-right-radius:8px;
+           margin-left: -200px;
+           cursor: pointer;
+           }
+
+         section > div > div, section > div > span {
+           position: absolute;
+           width: fit-content;
+           height: fit-content;
+           top: 0;
+           bottom: 0;
+           margin: auto;
+         }
+
+         section > div > div {
+           right:10px;
+         }
+
+         section > div:hover {
+            margin-left: 0;
+         }
+  </style>
+</head>
+<body>
+<section>
+    <div><span>Menu1</span> <div><i class="fa-solid fa-house"></i></div></div>
+
+    <div><span>Menu2</span> <div><i class="fa-solid fa-house"></i></div></div>
+
+    <div><span>Menu3</span> <div><i class="fa-solid fa-house"></i></div></div>
+
+    <div><span>Menu4</span> <div><i class="fa-solid fa-house"></i></div></div>
+
+    <div><span>Menu5</span> <div><i class="fa-solid fa-house"></i></div></div>
+
+
+</body>
+</html>
