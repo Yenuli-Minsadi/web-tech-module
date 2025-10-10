@@ -50,6 +50,76 @@
 
     res = y.slice(-3)
     console.log(res)//[80,90,100]
+
+    *====splice()=====*/
+    var y = [10,20,30,40,50,60,70,80,90,100]
+    let removed_items = y.splice(7);
+    console.log("Removed Items: ", removed_items)//[80,90,100]
+    console.log("y: ",y)//[10,20,30,40,50,60,70]
+
+    var y = [10,20,30,40,50,60,70,80,90,100]
+    y.splice(1,5, 100, 200, 300)
+    console.log("Removed Items: ", removed_items)//[20,30,40,50,60]
+    console.log("y: ",y)//[10,100,200,300,70]
+
+    /*====includes()=====*/
+    var fruits = ['apple','mango','lime']
+    console.log(fruits.includes('mango'))//true
+    console.log(fruits.includes('lime'))//true
+    console.log(fruits.includes('banana'))//false
+
+    /*====filter()=====*/
+   /* var number_list = [1,2,3,4,5,2];
+    var even_number_list = []
+
+    for (let i=0; i<number_list.length; i++) {
+        if (number_list[i]%2===0) {
+            even_number_list.push(number_list[i])
+        }
+    }*/
+
+    var even_number_list = number_list.filter(function(item) {
+        return item%2===0;
+    });
+
+    console.log('Even number list: ', even_number_list)
+
+    /*====forEach()=====*/
+      var fruits = ['apple','mango','lime']
+    fruits.forEach(function(item) {
+        console.log(item)
+    }
+
+    /*====map()=====*/
+     var programming_lang = ['Java','Python','JS']
+     programming_lang.map((item, index) => { // anonymous arrow function
+        console.log(index + " : "+ item)
+     });
+
+     /*====sort()=====*/
+     var item_array = [20,60,30,100,40,10,50,90,80,70]
+     var sorted_array = item.array.sort();
+     console.log(sorted_array); // [10,100,20,30,40,50,60,70,80,90]
+
+     /*====sort() with compare anonymous function=====*/
+     var sorted_array = item.array.sort((a, b)=>a-b);//sort in ascending order
+     console.log(sorted_array); // [10,20,30,40,50,60,70,80,90,100]
+
+     var sorted_array = item.array.sort((a, b)=>a-b);//sort in ascending order
+     console.log(sorted_array); // [100,90,80,70,60,50,40,30,20,10]
+
+      /*====reverse()=====*/
+      var letters = ['A','B','C']
+      var reversed_array = letters.reverse()
+      console.log(reversed_array)//['C','B','A']
+
+      /*====toString()=====*/
+      var z = [1,2,3]
+      var string_array = z.toSting()
+      console.log(string_array)//'1','2','3'
+
+
+
 </script>
 
 </body>
