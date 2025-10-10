@@ -7,17 +7,33 @@
 <body>
 <script>
     //Arrow functions
- /* var sayHello = () => {
+ /* const sayHello = () => {
         console.log('hello')
   }*/
 
-  var sayHello = (name, location) => {
+  const sayHello = (name, location) => {
         return 'hello '+name+' welcome to '+location
-    }
+  }
 
   let msg = sayHello('Yen','Dubai')
   console.log('msg: '+ msg)
 
+    //if only one statement in the function is returned
+
+    //const sayHello = (name, location) => 'hello '+name+' welcome to '+location
+
+    //if only one statement in the function is printed
+
+    //const sayHello = (name, location) => console.log('hi')
+
+    //const sayHello = (name, location) => console.log('hello '+name+' welcome to '+location)
+
+    //if printing many statements
+    //const sayHello = () => {
+        console.log('a')
+        console.log('b')
+        console.log('c')
+    }
 </script>
 
 </body>
