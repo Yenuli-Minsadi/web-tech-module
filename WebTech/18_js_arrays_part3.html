@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Array Methods</title>
+</head>
+<body>
+<script>
+
+  var x = [10, 20, 30];
+  console.log(x)
+
+  /*====push()=====*/
+  x.push(40)
+    console.log(x)// [10, 20, 30, 40]
+    x.push(40,60)
+    console.log(x)// [10, 20, 30, 40, 60]
+
+    /*====unshift()=====*/
+    x.unshift('A','B')
+    console.log(x)// [A, B, 10, 20, 30, 40, 60]
+
+    /*====pop()=====*/
+    x.pop()
+    console.log(x)// [A, B, 10, 20, 30]
+
+     /*====shift()=====*/
+    x.shift()
+    console.log(x)// [B, 20, 30]
+
+    /*====concat()=====*/
+    var a = ['A','B']
+    var b = ['C','D']
+
+    var c = a.concat(b)
+    console.log(c)//['A','B','C','D']
+
+    var d = ['E','F']
+
+    var x = a.concat(b,d)
+    console.log(c)//['A','B','C','D','E','F']
+
+    *====slice()=====*/
+    var y = [10,20,30,40,50,60,70,80,90,100]
+    var res = y.slice(3)
+    console.log(res)//[40,50,60,70,80,90,100]
+
+    res = y.slice(3,8)
+    console.log(res)//[40,50,60,70,80]
+
+    res = y.slice(-3)
+    console.log(res)//[80,90,100]
+</script>
+
+</body>
+</html>
