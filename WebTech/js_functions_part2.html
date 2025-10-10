@@ -8,11 +8,15 @@
 <script>
 
   //function expressions
-  var sayHello = function(name, location) {
+  const sayHello = function(name, location) {
         return 'hello '+name+' welcome to '+location
-    }
+  }
 
     sayHello('Yen','Dubai')
+
+    //if we make the function variable with var DT later in program there's a probability that the
+    //var that was assigned to a function gets re-assigned to a variable
+    //ex: var sayHello = 'hi'; therefore func exp are made w const DT
 </script>
 
 </body>
