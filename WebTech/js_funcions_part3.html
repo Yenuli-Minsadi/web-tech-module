@@ -7,10 +7,17 @@
 <body>
 <script>
     //Arrow functions
-  var sayHello = () => {
+ /* var sayHello = () => {
         console.log('hello')
-  }
-    sayHello()
+  }*/
+
+  var sayHello = (name, location) => {
+        return 'hello '+name+' welcome to '+location
+    }
+
+  let msg = sayHello('Yen','Dubai')
+  console.log('msg: '+ msg)
+
 </script>
 
 </body>
