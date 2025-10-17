@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background: lightblue;
+            border: 1px solid lightgray;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+<div><h2 id="counter">0</h2></div>
+<button id="btn">START</button>
+
+<script>
+    const counter = document.getElementById('counter');
+    const counter_btn = document.getElementById('btn');
+    var interval;
+    counter_btn.addEventListener('click', function () {
+        if (counter_btn.innerText === 'START') {
+            counter_btn.innerText = 'STOP';
+            interval = setInterval(() => {
+                counter.innerText = counter.innerText + 1;
+            }, 500)
+        } else {
+            counter_btn.innerText = 'START';
+            clearInterval(interval);
+        }
+    })
+    // var interval = setInterval(() => {
+    //
+    //     var txt = document.getElementsByTagName('h2')[0].innerText
+    //     txt = +txt + 1
+    //     if(document.getElementById('div').addEventListener === '')
+    //
+    //
+    //         document.getElementsByTagName('h2')[0].innerText = txt;
+    //
+    //
+    // }, 500)
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<h1>Hello IJSE</h1>-->
+<!--<h1>Hello JS</h1>-->
+<!--<h2>Hello JQuery</h2>-->
+<h1>hello1</h1>
+<h1>hello2</h1>
+<h1>hello3</h1>
+<h1>hello4</h1>
+
+<script src="assets/lib/jquery.js"></script>
+<script>
+    // $('h1')
+    // ce.fn.init {0: h1, length: 1, prevObject: ce.fn.init}
+    // $('h2')
+    // ce.fn.init {0: h2, length: 1, prevObject: ce.fn.init}
+
+    // $('h1').text()
+    // 'Hello IJSE'
+
+    // $('h1').text()
+    // 'Hello IJSEHello JS'
+    // $('h1')
+    // ce.fn.init {0: h1, 1: h1, length: 2, prevObject: ce.fn.init}
+    // $('h1').eq(0)
+    // ce.fn.init {0: h1, length: 1, prevObject: ce.fn.init}0: h1length: 1prevObject: ce.fn.init {0: h1, 1: h1, length: 2, prevObject: ce.fn.init}[[Prototype]]: Object
+    // $('h1')[0]
+    // <h1>Hw=ello IJSE</h1>​
+    // $('h1').eq(0).text()
+    // 'Hello IJSE'
+    // $('h1').eq(1).text()
+    // 'Hello JS'
+
+    // $('h1').text('y')
+    // ce.fn.init {0: h1, 1: h1, length: 2, prevObject: ce.fn.init}
+    // $('h1').eq(0).text('m')
+    // ce.fn.init {0: h1, length: 1, prevObject: ce.fn.init}
+
+    // $('h1').eq(1).html("<ol><li>hello</li></ol>")
+    // ce.fn.init {0: h1, length: 1, prevObject: ce.fn.init} change html
+
+    $('h1').eq(0)//1st h1 el
+    $('h1').eq(1)
+    $('h1').eq(2)
+    $('h1').eq(3)
+    $('h1').first()// first h1 el of doc
+    $('h1').last()// last h1 el of doc
+    $('h1').first().text()// first h1 el of doc
+    $('h1').last().text()// last h1 el of doc
+</script>
+
+</body>
+</html>

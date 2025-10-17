@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<input id="my-input">
+<h1 id="my-h1"></h1>
+
+<script>
+    const my_input = document.getElementById('my-input');
+    const my_h1 = document.getElementById('my-h1');
+
+    my_input.addEventListener('input', function () {
+        my_h1.innerText = my_input.value;
+    })
+</script>
+</body>
+</html>

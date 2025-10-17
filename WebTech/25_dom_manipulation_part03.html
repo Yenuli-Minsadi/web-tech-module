@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery DOM</title>
+</head>
+<body>
+<section>
+<div>
+    <ol>
+        <li>Java</li>
+        <li>C</li>
+        <li>C#</li>
+    </ol>
+</div>
+
+<div>
+    <ul>
+        <li>React.js</li>
+        <li>Next.js</li>
+    </ul>
+</div>
+</section>
+<script src="assets/lib/jquery.js"></script>
+$('section>div:first-child>ol>li:last-child').text("Pearl")
+$('section>div:last-child>ul>li:last-child').text("Vue")
+<!--$('section>div:last-child>ul>li:nth-child(3)').text("Vue")-->
+
+
+</body>
+</html>
