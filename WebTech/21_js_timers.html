@@ -24,24 +24,25 @@
 </head>
 <body>
 <section>
-    <div>
-        <h1>A</h1>
-    </div>
-    <div>
-        <h1>B</h1>
-    </div>
-    <div>
-        <h1>C</h1>
-    </div>
-    <div>
-        <h1>D</h1>
-    </div>
-    <div>
-        <h1>E</h1>
-    </div>
-    <div>
-        <h1>F</h1>
-    </div>
+<!--    <div>-->
+<!--        <h1>A</h1>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <h1>B</h1>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <h1>C</h1>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <h1>D</h1>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <h1>E</h1>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <h1>F</h1>-->
+<!--    </div>-->
+    <h2>0</h2>
 
 </section>
 
@@ -59,24 +60,45 @@
     //     console.log('Interval!!!')
     // }, 3000)//3000ms
 
-    var x = ['A', 'B', 'C', 'D', 'E', 'F'];
+    //ex1
 
-    setInterval(() => {
-        var item = x.pop()
-        x.unshift(item)
-        // console.log(x)
-        // document.getElementsByTagName('h1')[0].innerText = x[0];
-        // document.getElementsByTagName('h1')[1].innerText = x[1];
-        // document.getElementsByTagName('h1')[2].innerText = x[2];
-        // document.getElementsByTagName('h1')[3].innerText = x[3];
-        // document.getElementsByTagName('h1')[4].innerText = x[4];
-        // document.getElementsByTagName('h1')[5].innerText = x[5];
+    // var x = ['A', 'B', 'C', 'D', 'E', 'F'];
+    //
+    // setInterval(() => {
+    //     var item = x.pop()
+    //     x.unshift(item)
+    //     // console.log(x)
+    //     // document.getElementsByTagName('h1')[0].innerText = x[0];
+    //     // document.getElementsByTagName('h1')[1].innerText = x[1];
+    //     // document.getElementsByTagName('h1')[2].innerText = x[2];
+    //     // document.getElementsByTagName('h1')[3].innerText = x[3];
+    //     // document.getElementsByTagName('h1')[4].innerText = x[4];
+    //     // document.getElementsByTagName('h1')[5].innerText = x[5];
+    //
+    //     for (let i=0; i<x.length; i++) {
+    //         document.getElementsByTagName('h1')[i].innerText = x[i];
+    //     }
+    //
+    // }, 3000)
 
-        for (let i=0; i<x.length; i++) {
-            document.getElementsByTagName('h1')[i].innerText = x[i];
+    //ex2
+
+    var y = [];
+
+    var interval = setInterval(() => {
+
+        var txt = document.getElementsByTagName('h2')[0].innerText
+        if(txt==20) {
+            clearInterval(interval)
         }
+        txt = +txt + 1
 
-    }, 3000)
+
+            document.getElementsByTagName('h2')[0].innerText = txt;
+
+
+    }, 500)
+
 
 
 
