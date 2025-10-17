@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #bulb {
+            width: 100px;
+            aspect-ratio: 1/1;
+            border: 1px solid brown;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="bulb"></div>
+<button id="btn">ON</button>
+
+<script>
+    document.getElementById('btn').addEventListener('click', function () {
+        if (document.getElementById('btn').innerText === 'ON') {
+            document.getElementById('bulb').style.background = 'yellow';
+            document.getElementById('btn').innerText = 'OFF';
+        } else {
+            document.getElementById('bulb').style.background = 'none';
+            document.getElementById('btn').innerText = 'ON';
+        }
+    })
+
+
+</script>
+</body>
+</html>
