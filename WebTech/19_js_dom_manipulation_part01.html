@@ -8,13 +8,43 @@
 <h1 id="topic">
     Welcome to JS
 </h1>
+<h1>
+    Welcome
+</h1>
 
-<p>jnsvvvvvvjsmmdkvkk</p>
-<p>jnsvvvvvvjsmmdkvkk</p>
-<p>jnsvvvvvvjsmmdkvkk</p>
+<p class="myDesc">jnsvvvvvvjsmmdkvkk</p>
+<p class="myDesc">jnsvvvvvvjsmmdkvkk</p>
+<p class="myDesc">jnsvvvvvvjsmmdkvkk</p>
 
-<h2 id="sub-topic">Lets learn</h2>
+<!--<h2 id="sub-topic">Lets learn</h2>-->
+<h2 name="abc">Lets learn JS</h2>
+<h2 name="abc">Lets learn JS</h2>
+<h2 name="def">Lets learn CSS</h2>
+
+
 <script>
+
+    //getElementsByTagName
+    document.getElementsByTagName('h1');
+    var h1_list = getElementsByTagName('h1');
+    h1_list[0]//gives html
+    h1_list[1].innerText
+    h1_list[1].innerText="hellooooo"
+
+    //getElementsByClassName
+    document.getElementsByClassName('myDesc');
+    var p_list = getElementsByClassName('myDesc');
+    p_list[0]//gives html
+    p_list[1]
+
+    //getElementsName
+    document.getElementsName("abc");
+    var abc_element = document.getElementsName('abc');//returns nodelist
+    abc_element[0]
+    abc_element[1]
+
+
+
 
 </script>
 </body>

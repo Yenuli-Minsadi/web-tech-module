@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*h1 {*/
+        /*    color: blue;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<h1 id="myId">Hello JS</h1>
+<p class="myClass">sbkbsbkjs</p>
+<p class="myClass">vvvvvvvvv</p>
+<div>
+    <ol>
+        <li>
+            JS
+        </li>
+        <li>
+            CSS
+        </li>
+        <li>
+            HTML
+        </li>
+    </ol>
+</div>
+<script>
+
+    //selecting element by type using querySelector
+    document.querySelector('h1')//return html of h1
+    document.querySelector('h1').innerText
+    //'Hello JS'
+    document.querySelector('h1').innerText = 'hello ijse'
+    //'hello ijse'
+    document.querySelector('h1').innerHTML = '<h1>hiiii</h1>'
+    //'<h1>hiiii</h1>'
+
+    //selecting element by id using querySelector
+    document.querySelector('#myId')
+
+    //selecting element by class using querySelector
+    document.querySelector('.myClass')//returns the first elemnt it meets when reading cod from top to bottom querySelector won't return a collection
+    //<p class="myClass">sbkbsbkjs</p>
+
+    //selecting element by class using querySelectorAll
+    document.querySelectorAll('.myClass')// return nodelist of p
+</script>
+
+</body>
+</html>
